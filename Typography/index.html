@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Containers</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 
+        TEXT ALIGNMENT:
+        Can align text using text-center, text-start, text-end.
+        We can also set different text alignment for different screens.
+
+        TEXT WRAP:
+        Can wrap or overflow text using:
+        text-wrap   => Wraps the text over to next line if exceeds the container
+        text-nowrap => Does not wrap text if it exceeds the container (overflows outside container)
+        Can use different settings for different screens
+        text-break  => Breaks a long word into multiple lines if it goes beyond the container
+                       to prevent layout from breaking
+
+        TEXT TRANSFORM:
+        text-lowercase  => shows the text in lowercase
+        text-uppercase  => shows the text in uppercase
+        text-capitalize => shows the text in capitalized format
+                           (capitalizes the first letter of every word)
+        
+        FONT SIZE (.fs):
+        fs-1    =>  2.5rem  = 40px
+        fs-2    =>  2rem  = 32px
+        fs-3    =>  1.75rem  = 28px
+        fs-4    =>  1.5rem  = 24px
+        fs-5    =>  1.25rem  = 20px
+        fs-6    =>  1rem  = 16px
+
+        FONT WEIGHT AND STYLE:
+        fw = Font Weight
+        fw-bold     =>  Bold text
+        fw-bolder   =>  Bolder text
+        fw-normal   =>  Normal text weight
+        fw-light    =>  Light text weight
+        fw-lighter  =>  Lighter text weight
+        fst = Font Style
+        fst-italic  =>  Italic text style
+        fst-normal  =>  Normal text style
+
+        LINE HEIGHT:
+        lh-1    => Sets line height to 1
+        lh-sm   => Sets line height to small
+        lh-base => Sets line height to default
+        lh-lg   => Sets line height to large
+
+        MONOSPACE:
+        font-monospace  => Equal space between all characters
+
+        TEXT DECORATION:
+        text-decoration-underline       => Underlines the text
+        text-decoration-line-through    => Adds line through the text
+        text-decoration-none            => Removes all text decoration
+    -->
+
+    <header class="container-fluid mb-3">
+        <h1 class="text-lg-center text-sm-end text-start mt-1">Heading</h1>
+        <p class="fs-4 text-capitalize text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ab. Consectetur exercitationem ut ipsum mollitia doloremque laboriosam eius quaerat suscipit consequatur voluptate quisquam sit reiciendis ex vitae, aliquid quis libero!
+        </p>
+        <p class="font-monospace fs-4 text-center">This is Monospace text</p>
+    </header>
+
+    <div class="container-fluid mb-3">
+        <h1 class="text-center">Line Height</h1>
+        <p class="fs-4 text-center lh-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, sed illum consequuntur facilis et placeat asperiores quia aliquam modi at mollitia, architecto labore rerum? Quia unde vel eum esse ducimus?</p>
+        <p class="fs-4 text-center lh-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, sed illum consequuntur facilis et placeat asperiores quia aliquam modi at mollitia, architecto labore rerum? Quia unde vel eum esse ducimus?</p>
+        <p class="fs-4 text-center lh-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, sed illum consequuntur facilis et placeat asperiores quia aliquam modi at mollitia, architecto labore rerum? Quia unde vel eum esse ducimus?</p>
+        <p class="fs-4 text-center lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, sed illum consequuntur facilis et placeat asperiores quia aliquam modi at mollitia, architecto labore rerum? Quia unde vel eum esse ducimus?</p>
+    </div>
+
+    <div class="container-fluid mb-3">
+        <h1 class="text-center">Text Decoration</h1>
+        <p class="text-decoration-underline fs-3 text-center">This is underlined text</p>
+        <p class="text-decoration-line-through fs-3 text-center">Line Through text</p>
+        <a href="https://www.google.com" class="text-decoration-none fs-3 text-center">This is link</a>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Containers</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 
+    A row class parent is mandatory for column classes to take effect.
+    The row class parent should be contained in a container class parent as row class has negative margins.
+    Columns have 12px padding horizontally by default, so if you want to give background to the column
+    then it is better to give background to another div inside the column so it looks like there
+    is gap between columns
+
+    We can specify how many columns should be there in a row in different screen sizes.
+    Extra small     Small       Medium      Large       X-Large     XX-Large
+    <576px          ≥576px      ≥768px      ≥992px      ≥1200px     ≥1400px
+    Class name      col-            col-sm-     col-md-     col-lg-     col-xl-     col-xxl-
+    Example         col-3           col-sm-4    col-md-5    col-lg-6    col-xl-3    col-xxl-2
+    
+    The number at the end of the class name is the fraction of columns taken out of 12.
+    For example col-3 means 3 out of 12 columns taken by this element.
+    Bootstrap grid works on 12 column logic. The total of the columns ratio in a row should be 12.
+    So you can have 4 columns of 3 width, 3 columns of 4 width, 2 columns of 6 width or any other combination you require.
+    -->
+
+    <div class="container-fluid">
+        <!-- Row class Parent -->
+        <div class="row mb-3 bg-primary">
+            <!-- 
+                Here there will be:
+                1 column for mobile screens                     12  => 1 column only
+                2 columns for tablet screens (sm and md)        6   => 2 columns as 12/6 = 2
+                4 columns for laptop screens (lg, xl and xxl)   3   => 4 columns as 12/3 = 4
+            -->
+            <div class="col-12 col-sm-6 col-lg-3 bg-success">Col</div>
+            <div class="col-12 col-sm-6 col-lg-3 bg-info">Col</div>
+            <div class="col-12 col-sm-6 col-lg-3 bg-danger">Col</div>
+            <div class="col-12 col-sm-6 col-lg-3 bg-warning">Col</div>
+        </div>
+    
+        <!-- We can also have different width of columns -->
+        <div class="row bg-primary mb-3">
+            <!-- 
+                Here the first and third columns will take (3/12 * 100)% = 25% width
+                The second column will take (6/12 * 100)% = 50% width
+            -->
+            <div class="col-3 bg-secondary">Side</div>
+            <div class="col-6 bg-primary">Center</div>
+            <div class="col-3 bg-secondary">Side</div>
+        </div>
+
+        <!-- If the total columns exceed 12 then the excess column will be pushed to next line -->
+        <div class="row bg-primary mb-3">
+            <!-- 
+                Here the first 3 columns already fill up all 12 slots available so the last column will
+                pushed to next line
+            -->
+            <div class="col-3 bg-secondary">Side</div>
+            <div class="col-6 bg-warning">Center</div>
+            <div class="col-3 bg-secondary">Side</div>
+            <div class="col-1 bg-danger">Extra</div>
+
+            <!-- Can force next column to go to next line using the below line -->
+            <div class="w-100"></div>
+            
+            <div class="col-1 bg-danger">Extra</div>
+        </div>
+
+        <!-- We can use auto layout if we want equal space for all columns -->
+        <div class="row bg-primary mb-3">
+            <!-- Here all the 3 columns will be arranges equally inside the row -->
+            <div class="col bg-info">Col</div>
+            <div class="col bg-danger">Col</div>
+            <div class="col bg-warning">Col</div>
+        </div>
+
+        <!-- 
+            We can also set how many columns we need in a row in the row class element using row-cols- 
+            The below line sets the following:
+            there will be 5 columns in the row in laptop screens (lg, xl, xxl)
+            there will be 2 columns in the row in tablet screens (sm, md)
+            there will be 1 column in the row in mobile screens
+        -->
+        <div class="row bg-primary mb-3 row-cols-lg-5 row-cols-sm-2 row-cols-1">
+            <div class="col">
+                <div class="bg-warning">COL</div>
+            </div>
+            <div class="col">
+                <div class="bg-warning">COL</div>
+            </div>
+            <div class="col">
+                <div class="bg-warning">COL</div>
+            </div>
+            <div class="col">
+                <div class="bg-warning">COL</div>
+            </div>
+            <div class="col">
+                <div class="bg-warning">COL</div>
+            </div>
+        </div>
+
+        <!-- 
+            We can also use flex properties as row is a flex container
+            Can use:
+            justify-content-start       => Aligns items horizontally at the start
+            justify-content-center      => Aligns items horizontally at the center
+            justify-content-end         => Aligns items horizontally at the end
+            justify-content-around      => Items will have space before, between, and after them horizontally
+            justify-content-between     => Items will have space between them horizontally
+            justify-content-evenly      => Items will have equal space between them
+
+            align-items-start           => Aligns items vertically at the start
+            align-items-center          => Aligns items vertically at the center
+            align-items-end             => Aligns items vertically at the end
+        -->
+        <div class="row bg-primary justify-content-center">
+            <div class="col-8 bg-danger">
+                <div class="container-fluid bg-secondary">Hello</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

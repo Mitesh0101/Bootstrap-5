@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BreakPoints</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!--
+        Bootstrap Breakpoints :
+        LAPTOP DISPLAY
+        xxl             ->      >=1400px
+        xl              ->      >=1200px    max = 1399px
+        lg              ->      >=992px     max = 1199px
+        
+        TABLET DISPLAY
+        md              ->      >=768px     max = 991px
+        sm              ->      >=576px     max = 767px
+        
+        MOBILE DISPLAY
+        extra small     ->      <576px      max = 575px
+     -->
+
+    <!--
+        The text in the div class will be left aligned for extra small screens,
+        right aligned for tablet screens and center aligned for laptop screens
+        text-start     => applies to extra small screens
+        text-sm-end    => applies to tablet screens (sm and md)
+        text-lg-center => applies to laptop screens (lg, xl and xxl)
+    -->
+    <div class="text-lg-center text-sm-end text-start">Hello World</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
