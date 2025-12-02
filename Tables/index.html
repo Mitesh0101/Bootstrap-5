@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 
+        table   => used on tables
+        Border styles, active styles, and table variants are not inherited by nested tables.
+
+        COLORING TABLE
+        Can use the following color classes on table, tr(row) and th(cell) tags
+        table-primary   
+        table-secondary 
+        table-success   
+        table-danger    
+        table-warning   
+        table-info      
+        table-light     
+        table-dark
+        
+        align-top           =>  Aligns the content of the table,row or cell to top
+        align-middle        =>  Aligns the content of the table,row or cell to middle
+        align-bottom        =>  Aligns the content of the table,row or cell to bottom
+
+        caption-top         =>  Can move the table caption to top
+
+        table-responsive    =>  Can add horizontal scrollbar to the table if content
+                                overflows. It is used on wrapper div class around table
+
+        scope="row" / scope="col"   =>  Used for screen readers (Software used by blind
+                                        people)
+    -->
+
+    <div class="container-fluid">
+
+        <!-- Table Color -->
+        <div class="table-responsive">
+            <table class="table mb-5 align-middle text-center fs-4 table-primary">
+                <caption class="caption-top">PC Components</caption>
+                <thead>
+                    <!-- Row Color -->
+                    <tr class="table-dark">
+                        <th scope="col">Name</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="align-top">
+                        <td>4GB<br>RAM</td>
+                        <!-- Cell Color -->
+                        <td class="table-light">3</td>
+                        <td>300$</td>
+                    </tr>
+                    <tr>
+                        <td>8GB<br>RAM</td>
+                        <td class="align-bottom">3</td>
+                        <td>500$</td>
+                    </tr>
+                    <tr>
+                        <td>16GB<br>RAM</td>
+                        <td>3</td>
+                        <td>1000$</td>
+                    </tr>
+                    <tr>
+                        <td>32GB<br>RAM</td>
+                        <td>3</td>
+                        <td>2000$</td>
+                    </tr>
+                </tbody>
+                    <tfoot>
+                        <tr>
+                            <th colspan="2">Total</th>
+                            <td>3800$</td>
+                        </tr>
+                    </tfoot>
+            </table>
+        </div>
+    
+        <!-- 
+            table-striped       =>  add zebra-striping to any table row within the table body.
+                                    Can also be used with colored tables
+            table-hover         =>  Enables hover state (color becomes lighter when hovered 
+                                    on row) on the table.
+            table-active        =>  Highlights a cell or row in the table
+    
+            table-bordered      =>  Adds borders on all sides of tables and cells
+            table-borderless    =>  Removes all borders
+    
+            table-sm            =>  Makes the table compact by cutting the cell padding by half
+        -->
+        <div class="table-responsive">
+            <table class="table table-bordered table-sm text-center fs-4 table-dark table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>4GB RAM</td>
+                        <td class="table-active">3</td>
+                        <td>300$</td>
+                    </tr>
+                    <tr>
+                        <td>8GB RAM</td>
+                        <td>3</td>
+                        <td>500$</td>
+                    </tr>
+                    <tr>
+                        <td>16GB RAM</td>
+                        <td>3</td>
+                        <td>1000$</td>
+                    </tr>
+                    <tr class="table-active">
+                        <td>32GB RAM</td>
+                        <td>3</td>
+                        <td>2000$</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

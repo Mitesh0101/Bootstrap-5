@@ -8,18 +8,30 @@
 </head>
 <body>
     <!-- 
-        Can use img-fluid class to make an image adjust to the size of the container
+        img-fluid => make an image adjust to the size of the container
+        applies width:100% and height:auto to the image
+        Can make large images fit to the container but can't make small
+        images stretch to fit in the container
+
+        img-thumbnail => gives the image 1px rounded border
+
+        rounded => Gives the image rounded border
+
+        ALIGNING IMAGES INSIDE A CONTAINER
+        float-start     =>  Aligns the image to the left of the container
+        float-end       =>  Aligns the image to the right of the container
+        mx-auto d-block =>  Aligns the image to the center of the container
     -->
 
     <div class="container-fluid">
         <div class="row my-3 align-items-center">
-            <div class="col-sm-6 col-12 text-align-center">
-                <img src="https://www.britannica.com/cdn/23/256823-101-11E00D74/images/image-2.jpg" class="img-fluid" alt="peacock">
-            </div>
-            <div class="col-sm-6 col-12 text-center">
-                The peacock is a very significant bird in many cultures. However, in India, the Peacock is known as the national bird. The bird also known as Pavo symbolises strength and power and its feathers symbolize immortality and immunity to evil. Peacock motifs in Indian art symbolise wealth and luxury items, similar to, clothing or jewellery. These motifs can easily be found mainly in Hindu temples which signify resurrection and immortality.
+            <div class="col-12 px-3 text-align-center">
+                <img src="https://www.britannica.com/cdn/23/256823-101-11E00D74/images/image-2.jpg" class="img-fluid img-thumbnail float-end" alt="peacock">
             </div>
         </div>
+    </div>
+    <div class="container-fluid">
+        <img src="https://www.britannica.com/cdn/23/256823-101-11E00D74/images/image-2.jpg" class="img-fluid mx-auto d-block rounded" alt="peacock">
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
