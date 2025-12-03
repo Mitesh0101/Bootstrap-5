@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 
+        form-select     =>      makes the select element a block element with width 100%,
+                                1px border with 0.25 rem radius, adds a dropdown arrow 
+                                and also adds a blue halo when it is in focus
+                                Can also use form-select-lg or form-select-sm to set the
+                                height
+    -->
+    <div class="container-fluid">
+        <label for="subject" class="form-label">Subject</label>
+        <select name="subject" id="subject" class="form-select mb-5">
+            <option selected hidden>--Subjects--</option>
+            <option value="maths">Maths</option>
+            <option value="science">Science</option>
+            <option value="arts">Arts</option>
+        </select>
+
+        <!-- Can also use the multiple and size attributes -->
+        <label for="large-subject" class="form-label">Large Subject</label>
+        <select name="large-subject" id="large-subject" class="form-select form-select-lg mb-5">
+            <option selected hidden>--Subjects--</option>
+            <option value="maths">Maths</option>
+            <option value="science">Science</option>
+            <option value="arts">Arts</option>
+        </select>
+        
+        <label for="small-subject" class="form-label">Small Subject</label>
+        <select name="small-subject" id="small-subject" class="form-select form-select-sm mb-5">
+            <option selected hidden>--Subjects--</option>
+            <option value="maths">Maths</option>
+            <option value="science">Science</option>
+            <option value="arts">Arts</option>
+        </select>
+
+        <label for="disabled-subject" class="form-label">Disabled Subject</label>
+        <select name="disabled-subject" id="disabled-subject" disabled class="form-select mb-5">
+            <option selected hidden>--Subjects--</option>
+            <option value="maths">Maths</option>
+            <option value="science">Science</option>
+            <option value="arts">Arts</option>
+        </select>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

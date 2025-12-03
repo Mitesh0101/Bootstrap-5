@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 
+        form-range  =>  styles the range input such that it appears the same
+                        accross all browsers
+    -->
+
+    <div class="container-fluid my-3">
+        <label for="range" class="form-label">Range</label>
+        <input type="range" min="0" max="100" class="form-range" id="range" step="10">
+    </div>
+
+    <div class="container-fluid my-3">
+        <label for="disabled-range" class="form-label">Disabled Range</label>
+        <input type="range" min="0" max="100" class="form-range" id="disabled-range" disabled>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

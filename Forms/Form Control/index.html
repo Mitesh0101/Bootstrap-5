@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 
+        form-label              =>      Add some margin bottom to the label
+        form-text               =>      makes the font-size 0.875em and color gray and
+                                        also adds margin top so it doesnt stick to the input
+                                        field above
+
+        form-control            =>      Used on input/textarea tags. makes the input element a
+                                        block element and sets width to 100%. It adds border and padding
+                                        and a blue halo glow when input field is in focus
+                                        Can use form-control-lg and form-control-sm
+                                        to set height
+        form-control-plaintext  =>      Can style <input readonly> tags as plain text
+    -->
+    <div class="container-fluid my-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="text" id="email" class="form-control">
+        <p class="form-text">This is email field</p>
+        <label for="large-email" class="form-label">Large Email</label>
+        <input type="text" id="large-email" class="form-control form-control-lg">
+        <label for="small-email" class="form-label">Small Email</label>
+        <input type="text" id="small-email" class="form-control form-control-sm">
+        
+        <label for="address" class="form-label">Address</label>
+        <textarea rows="5" class="form-control mb-4" id="address"></textarea>
+        <br><br>
+
+        <!-- form-control gives greyed out appearance to disabled or readonly inputs -->
+        <input type="text" class="form-control mb-1" placeholder="Disabled Input" disabled>
+        <input type="text" class="form-control mb-1" placeholder="Disabled Readonly Input" disabled readonly>
+        <!-- Cannot modify the readonly inputs value -->
+        <input type="text" class="form-control mb-1" value="Readonly Input" readonly>
+        <input type="text" class="form-control-plaintext mb-1" value="Readonly Input" readonly>
+        <br><br>
+
+        <label for="file" class="form-label">Single File Input</label>
+        <input type="file" name="file" id="file" class="form-control mb-3">
+        <label for="files" class="form-label">Multiple File Input</label>
+        <input type="file" name="files" id="files" class="form-control mb-3" multiple>
+        <label for="disabled-file" class="form-label">Disabled File Input</label>
+        <input type="file" name="file" id="disabled-file" class="form-control mb-3" disabled>
+        <label for="large-file" class="form-label">Large File Input</label>
+        <input type="file" name="file" id="large-file" class="form-control form-control-lg mb-3">
+        <label for="small-file" class="form-label">Small File Input</label>
+        <input type="file" name="file" id="small-file" class="form-control form-control-sm">
+        <br><br>
+
+        <label for="browser" class="form-label">Browser</label>
+        <input type="text" name="browser" id="browser" list="browsers" placeholder="Start typing here.." class="form-control">
+        <datalist id="browsers">
+            <option value="Mozilla Firefox">Mozilla Firefox</option>
+            <option value="Brave">Brave</option>
+            <option value="Google Chrome">Google Chrome</option>
+            <option value="Opera Browser">Opera Browser</option>
+        </datalist>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
