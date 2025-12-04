@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Group</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="row m-3 row-cols-5 gy-5">
+        <div class="col">
+            <!-- Can have numbered list-groups using list-group-numbered -->
+            <ul class="list-group list-group-numbered">
+                <li class="list-group-item">Item 1</li>
+                <li class="list-group-item">Item 2</li>
+                <li class="list-group-item active">Active Item</li>
+                <li class="list-group-item disabled">Disabled Item</li>
+                <li class="list-group-item">Item 3</li>
+                <li class="list-group-item">Item 4</li>
+            </ul>
+        </div>
+
+        <div class="col">
+            <!-- Can have horizontal list-groups using list-group-horizontal -->
+            <ul class="list-group list-group-horizontal">
+                <li class="list-group-item">Item 1</li>
+                <li class="list-group-item">Item 2</li>
+                <li class="list-group-item">Item 3</li>
+            </ul>
+        </div>
+
+        <div class="col">
+            <!-- With list-group-flush we can remove some borders and rounded corners to render list groups edge to edge in parent container -->
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Item 1</li>
+                <li class="list-group-item">Item 2</li>
+                <li class="list-group-item active">Active Item</li>
+                <li class="list-group-item disabled">Disabled Item</li>
+                <li class="list-group-item">Item 3</li>
+                <li class="list-group-item">Item 4</li>
+            </ul>
+        </div>
+
+        <div class="col">
+            <ul class="list-group">
+                <a href="#" class="list-group-item list-group-item-action">Link Item 1</a>
+                <a href="#" class="list-group-item list-group-item-action">Link Item 2</a>
+                <a href="#" class="list-group-item list-group-item-action active">Active Link Item</a>
+                <a href="#" class="list-group-item list-group-item-action disabled">Disabled Link Item</a>
+                <a href="#" class="list-group-item list-group-item-action">Item Link 3</a>
+                <a href="#" class="list-group-item list-group-item-action">Item Link 4</a>
+            </ul>
+        </div>
+
+        <div class="col">
+            <ul class="list-group">
+                <button type="button" class="list-group-item list-group-item-action">Button Item 1</button>
+                <button type="button" class="list-group-item list-group-item-action">Button Item 2</button>
+                <button type="button" class="list-group-item list-group-item-action active">Active Button Item</button>
+                <button type="button" class="list-group-item list-group-item-action" disabled>Disabled Button Item</button>
+                <button type="button" class="list-group-item list-group-item-action">Item Button 3</button>
+                <button type="button" class="list-group-item list-group-item-action">Item Button 4</button>
+            </ul>
+        </div>
+
+        <div class="col">
+            <ul class="list-group">
+                <li class="list-group-item list-group-item">Default list item</li>
+                <li class="list-group-item list-group-item-primary">Primary list item</li>
+                <li class="list-group-item list-group-item-secondary">Secondary list item</li>
+                <li class="list-group-item list-group-item-danger">Danger list item</li>
+                <li class="list-group-item list-group-item-warning">Warning list item</li>
+                <li class="list-group-item list-group-item-info">Info list item</li>
+                <li class="list-group-item list-group-item-success">Success list item</li>
+                <li class="list-group-item list-group-item-light">Light list item</li>
+                <li class="list-group-item list-group-item-dark">Dark list item</li>
+            </ul>
+        </div>
+
+        <div class="col">
+            <ul class="list-group">
+                <button class="list-group-item list-group-item-action list-group-item">Default list button item</button>
+                <button class="list-group-item list-group-item-action list-group-item-primary">Primary list button item</button>
+                <button class="list-group-item list-group-item-action list-group-item-secondary">Secondary list button item</button>
+                <button class="list-group-item list-group-item-action list-group-item-danger">Danger list button item</button>
+                <button class="list-group-item list-group-item-action list-group-item-warning">Warning list button item</button>
+                <button class="list-group-item list-group-item-action list-group-item-info">Info list button item</button>
+                <button class="list-group-item list-group-item-action list-group-item-success">Success list button item</button>
+                <button class="list-group-item list-group-item-action list-group-item-light">Light list button item</button>
+                <button class="list-group-item list-group-item-action list-group-item-dark">Dark list button item</button>
+            </ul>
+        </div>
+
+        <div class="col">
+            <!-- Can also use badges with list groups -->
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">Item 1 <span class="badge bg-primary d-flex">2</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">Item 2 <span class="badge bg-secondary float-end">2</span></li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">Item 3 <span class="badge bg-danger float-end">2</span></li>
+            </ul>
+        </div>
+
+        <div class="col">
+            <!-- Can also use checkboxes and radio buttons inside list -->
+            <div class="list-group">
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    First checkbox
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    Second checkbox
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    Third checkbox
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    Fourth checkbox
+                </label>
+                <label class="list-group-item">
+                    <input class="form-check-input me-1" type="checkbox" value="">
+                    Fifth checkbox
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

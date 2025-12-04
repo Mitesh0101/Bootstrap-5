@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breadcrumbs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Breadcrumbs can be used on lists to display the current page's location in a navbar
+         seperators are automatically added using css -->
+    <nav class="p-3">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item active">Home</li>
+        </ol>
+    </nav>
+
+    <!-- We can add our custom seperators using style tag -->
+    <nav class="p-3" style="--bs-breadcrumb-divider : ' > ';">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active">Library</li>
+        </ol>
+    </nav>
+
+    <nav class="p-3">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Library</a></li>
+            <li class="breadcrumb-item active">Data</li>
+        </ol>
+    </nav>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="dropdown m-5">
+        <!-- dropdown-toggle adds an arrow at the end of the button
+             data-bs-toggle="dropdown" specifies that the button toggles a dropdown -->
+        <!-- Can give offset using data-bs-offset (x,y) -->
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-offset="0,10">Dropdown Menu</button>
+        <!-- dropdown-menu specifies that this ul list will be shown when dropdown is toggled -->
+        <ul class="dropdown-menu">
+            <li><h6 class="dropdown-header">Dropdown header</h6></li>
+            <li><a href="#" class="dropdown-item">Item 1</a></li>
+            <!-- Can style an item as active or disabled -->
+            <li><a href="#" class="dropdown-item active">Item 2</a></li>
+            <li><a href="#" class="dropdown-item disabled">Item 3</a></li>
+            <!-- Can use hr as divider using dropdown-divider class -->
+            <li><hr class="dropdown-divider"></li>
+            <li><a href="#" class="dropdown-item">Item 4</a></li>
+        </ul>
+    </div>
+
+    
+    <div class="dropdown m-5">
+        <!-- with dropdown-toggle-split we can seperate the text and the arrow of dropdown -->
+        <div class="btn-group">
+            <button type="button" class="btn btn-secondary">Dropdown Menu</button>
+            <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
+            <ul class="dropdown-menu">
+                <li><a href="#" class="dropdown-item">Item 1</a></li>
+                <li><a href="#" class="dropdown-item">Item 2</a></li>
+                <li><a href="#" class="dropdown-item">Item 3</a></li>
+                <li><a href="#" class="dropdown-item">Item 4</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="dropdown m-5">
+        <!-- Can change the size of the button using btn-sm or btn-lg -->
+        <!-- Technically working but should keep 1 menu per button -->
+        <button type="button" class="btn btn-sm btn-secondary dropdown-toggle" data-bs-toggle="dropdown">Dropdown Menu</button>
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">Dropdown Menu</button>
+        <button type="button" class="btn btn-lg btn-secondary dropdown-toggle" data-bs-toggle="dropdown">Dropdown Menu</button>
+        <!-- Can align the dropdown-menu respective to button using dropdown-menu-start, dropdown-menu-end and also use
+             responsive classes like dropdown-menu-lg-end which makes the dropdown menu left aligned for mobile and tablet screens
+             and right aligned for laptop screens -->
+        <ul class="dropdown-menu dropdown-menu-lg-end">
+            <li><a href="#" class="dropdown-item">Item 1</a></li>
+            <li><a href="#" class="dropdown-item">Item 2</a></li>
+            <li><a href="#" class="dropdown-item">Item 3</a></li>
+            <li><a href="#" class="dropdown-item">Item 4</a></li>
+        </ul>
+    </div>
+
+    <div class="dropdown m-5">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">Dropdown Menu</button>
+        <!-- To get dark dropdown menu we can use dropdown-menu-dark on the list -->
+        <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a href="#" class="dropdown-item">Item 1</a></li>
+            <li><a href="#" class="dropdown-item">Item 2</a></li>
+            <li><a href="#" class="dropdown-item">Item 3</a></li>
+            <li><a href="#" class="dropdown-item">Item 4</a></li>
+        </ul>
+    </div>
+
+    <div class="dropdown m-5 dropup">
+        <!-- Can use dropup, dropend, dropstart to set the drop direction -->
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">Dropup Menu</button>
+        <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a href="#" class="dropdown-item">Item 1</a></li>
+            <li><a href="#" class="dropdown-item">Item 2</a></li>
+            <li><a href="#" class="dropdown-item">Item 3</a></li>
+            <li><a href="#" class="dropdown-item">Item 4</a></li>
+        </ul>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

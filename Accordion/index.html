@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- accordion-parent is needed for accordion to work -->
+    <div class="accordion m-3" id="accordion-parent">
+        <!-- Each collapsed div is wrapped by an accordion-item -->
+        <div class="accordion-item">
+            <!-- data-bs-toggle="collapse" means the button is used for toggling the collapse state. data-bs-target is used to specify the
+                 target. -->
+            <!-- accordion-button class styles the button so that it spans the whole width and has an arrow indicating the collapse state
+                 The button and it's text becomes blue with a blue halo border when it is in focus. -->
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1">Accordion Item 1</button>
+            </h2>
+            <!-- The data-bs-parent specifies the parent of the collapsing div.
+                 accordion-collapse adds padding to the content and collapse class collapses the container and show class shows the container -->
+            <div id="collapse-1" class="accordion-collapse collapse show" data-bs-parent="#accordion-parent">
+                <div class="accordion-body">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, maxime laudantium accusamus dolorum iusto ea! Optio necessitatibus natus, fuga itaque sequi impedit ratione nam maxime doloremque velit est architecto dolor.</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <!-- collapsed class switches the button state to when the div is collapsed -->
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2">Accordion Item 2</button>
+            </h2>
+            <div id="collapse-2" class="accordion-collapse collapse" data-bs-parent="#accordion-parent">
+                <div class="accordion-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore totam sint unde sapiente, quasi odit quae at impedit veritatis eligendi asperiores nostrum illum, corporis harum, sit officiis ullam ratione animi?</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3">Accordion Item 3</button>
+            </h2>
+            <div id="collapse-3" class="accordion-collapse collapse" data-bs-parent="#accordion-parent">
+                <div class="accordion-body">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae dolor asperiores aspernatur voluptates quo provident, amet accusamus similique officiis! Similique amet deserunt harum distinctio, minus aliquid quae possimus reprehenderit iure?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 
+        Cards have 100% width by default so we have to specify the width manually.
+    -->
+    <div class="row">
+        <div class="col">
+            <div class="card m-5 text-center" style="width: 18rem;">
+                <div class="card-header">
+                    Card Header
+                </div>
+                <img src="https://img.icons8.com/emoji/1200/hundred-points.jpg" style="width: 17rem;" class="card-img-top" alt="img">
+                <div class="card-body">
+                    <h5 class="card-title">Card Title</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, totam?</p>
+                </div>
+                <ul class="list-group">
+                    <li class="list-group-item">Item 1</li>
+                    <li class="list-group-item">Item 2</li>
+                    <li class="list-group-item">Item 3</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link">Link 1</a>
+                    <a href="#" class="card-link">Link 2</a>
+                </div>
+                <div class="card-footer">
+                    Card Footer
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card m-5 p-2 text-center" style="max-width: 1000px;">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="https://img.icons8.com/emoji/1200/hundred-points.jpg" style="width: 8rem;" class="card-img-top" alt="img">
+                    </div>
+                    <div class="col">
+                        <div class="card-body">
+                            <h5 class="card-title">Card Title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, totam?</p>
+                        </div>
+                        <ul class="list-group">
+                            <li class="list-group-item">Item 1</li>
+                            <li class="list-group-item">Item 2</li>
+                            <li class="list-group-item">Item 3</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Link 1</a>
+                            <a href="#" class="card-link">Link 2</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card m-5 text-center" style="width: 18rem;">
+                <div class="card-header">
+                    <!-- Can also use nav-pills and card-header-pills instead of nav-tabs and card-header-tabs -->
+                    <ul class="nav nav-tabs card-header-tabs">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">Active</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link disabled">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Card Title</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, totam?</p>
+                </div>
+                <ul class="list-group">
+                    <li class="list-group-item">Item 1</li>
+                    <li class="list-group-item">Item 2</li>
+                    <li class="list-group-item">Item 3</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#" class="card-link">Link 1</a>
+                    <a href="#" class="card-link">Link 2</a>
+                </div>
+                <img src="https://img.icons8.com/emoji/1200/hundred-points.jpg" style="width: 17rem;" class="card-img-bottom" alt="img">
+                <div class="card-footer">
+                    Card Footer
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- card-group is used to group and display cards as a single element with equal width and height columns -->
+    <div class="card-group m-5">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title">Card Title</h5>
+            </div>
+            <div class="card-body">
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, debitis!</p>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title">Card Title</h5>
+            </div>
+            <div class="card-body">
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, debitis!</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

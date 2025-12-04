@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapse</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid m-3 p-3 text-center">
+        <!-- data-bs-target takes the id or class name of the target to collapse -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#id1">Single Collapse</button>
+        <!-- collapse class collapses the div -->
+        <div id="id1" class="container my-3 collapse">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nulla accusamus iusto vero, eos explicabo dolorem quis commodi, harum iste cupiditate quas deserunt natus consectetur fuga dolorum, nisi dolore hic.</p>
+        </div>
+    </div>
+
+    <div class="container-fluid m-3 p-3 text-center">
+        <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#id5">Single Collapse</button>
+        <!-- show class shows the div while applying collapse class -->
+        <div id="id5" class="container my-3 collapse show">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nulla accusamus iusto vero, eos explicabo dolorem quis commodi, harum iste cupiditate quas deserunt natus consectetur fuga dolorum, nisi dolore hic.</p>
+        </div>
+    </div>
+    
+    <div class="container-fluid m-3 p-3 text-center">
+        <!-- Can toggle multiple collapses by using class name as data-bs-target in the button -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target=".multi-collapse">Multiple Collapse</button>
+        <div class="row">
+            <div class="col">
+                <div id="id2" class="container my-3 collapse multi-collapse">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nulla accusamus iusto vero, eos explicabo dolorem quis commodi, harum iste cupiditate quas deserunt natus consectetur fuga dolorum, nisi dolore hic.</p>
+                </div>
+            </div>
+
+            <div class="col">
+                <div id="id3" class="container my-3 collapse multi-collapse">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nulla accusamus iusto vero, eos explicabo dolorem quis commodi, harum iste cupiditate quas deserunt natus consectetur fuga dolorum, nisi dolore hic.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

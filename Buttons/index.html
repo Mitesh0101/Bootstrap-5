@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container text-center my-3">
+        <!-- We can give button different background colors using btn-color and we can also make a button look like a link using btn-link -->
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-dark">Dark</button>
+        <button type="button" class="btn btn-link">Link</button>
+        
+        <!-- If we don't want button text to wrap we can use text-nowrap -->
+        <!-- <button type="button" class="btn btn-dark text-nowrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores alias vel nostrum quo adipisci magni iste dolor nisi impedit, architecto officia. Libero quas eligendi vel error ea. Fuga laudantium voluptatem officia delectus quidem temporibus facilis sunt repellendus in voluptatum blanditiis quis quasi quae esse tempora nostrum, ratione accusamus iure doloribus dolorem veniam inventore! Architecto, obcaecati? Aut molestiae quibusdam eligendi sunt commodi, mollitia id tempore explicabo maiores earum, amet fuga deleniti doloremque, nobis cumque a iusto quia temporibus accusantium esse incidunt. Praesentium veritatis unde officiis numquam, earum ad voluptate temporibus eum distinctio architecto, dolorem, quidem nemo expedita. Nulla deserunt ducimus cupiditate!</button> -->
+    </div>
+
+    <div class="container text-center my-3">
+        <!-- While btn class is primarily used with buttons, we can also use it with anchor tags and input tags -->
+        <a class="btn btn-primary" href="#" role="button">Link</a>
+        <button class="btn btn-primary" type="submit">Button</button>
+        <input class="btn btn-primary" type="button" value="Input">
+        <input class="btn btn-primary" type="submit" value="Submit">
+        <input class="btn btn-primary" type="reset" value="Reset">
+    </div>
+
+    <div class="container text-center my-3">
+        <!-- We can have just an outline on the button using btn-outline-color and when hovered on, their background colors change to color -->
+        <button type="button" class="btn btn-outline-primary">Primary</button>
+        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+        <button type="button" class="btn btn-outline-success">Success</button>
+        <button type="button" class="btn btn-outline-danger">Danger</button>
+        <button type="button" class="btn btn-outline-warning">Warning</button>
+        <button type="button" class="btn btn-outline-info">Info</button>
+        <button type="button" class="btn btn-outline-light">Light</button>
+        <button type="button" class="btn btn-outline-dark">Dark</button>
+    </div>
+
+    <div class="container text-center my-3">
+        <!-- We can get large or small buttons using btn-lg or btn-sm -->
+        <button type="button" class="btn-lg btn-primary">Button</button>
+        <button type="button" class="btn btn-primary">Button</button>
+        <button type="button" class="btn-sm btn-primary">Button</button>
+    </div>
+
+    <div class="container text-center my-3">
+        <!-- Disabled buttons can't be hovered on or clicked -->
+        <button type="button" class="btn btn-primary" disabled>Disabled Primary Button</button>
+        <button type="button" class="btn btn-secondary" disabled>Disabled Secondary Button</button>
+    </div>
+
+    <div class="container text-center my-3">
+        <!-- We can toggle on/off a button using data-bs-toggle="button" -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="button">Button</button>
+        <button type="button" class="btn btn-primary active" data-bs-toggle="button">Toggled Button</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="button" disabled>Disabled Button</button>
+    </div>
+
+    <!-- 
+        We can use btn-group to group multiple buttons together
+        We can set the size using btn-group-lg or btn-group-sm 
+    -->
+    <div class="container text-center my-3">
+        <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-primary">Left</button>
+            <button type="button" class="btn btn-primary">Middle</button>
+            <button type="button" class="btn btn-primary">Right</button>
+        </div>
+
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-primary">Left</button>
+            <button type="button" class="btn btn-primary">Middle</button>
+            <button type="button" class="btn btn-primary">Right</button>
+        </div>
+        
+        <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-primary">Left</button>
+            <button type="button" class="btn btn-primary">Middle</button>
+            <button type="button" class="btn btn-primary">Right</button>
+        </div>
+
+        <!-- We can have vertical button groups -->
+        <div class="btn-group-vertical" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-primary">Top</button>
+            <button type="button" class="btn btn-primary">Middle</button>
+            <button type="button" class="btn btn-primary">Bottom</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
