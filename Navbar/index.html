@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navs and Tabs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar content must be wrapped by div container
+         navbar can be colored using navbar-dark, navbar-light used alongside bg-dark, bg-light 
+    -->
+    <nav class="navbar navbar-dark bg-dark mb-5">
+        <div class="container-fluid">
+            <!-- navbar-brand is used for representing brand logo or name -->
+            <a href="#" class="navbar-brand">
+                <img src="https://blog.logomaster.ai/hs-fs/hubfs/bmw-logo-1963.jpg?width=672&height=454&name=bmw-logo-1963.jpg" height="60" alt="brand">
+            </a>
+            <!-- this button can be used to toggle the navbar nav -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- the navbar nav must be wrapped by a div container and navbar-collapse collapse must be used if we want a
+                 collapsing navbar nav -->
+            <div class="navbar-collapse collapse" id="collapseNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Page 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Page 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+                <!-- We can include text inside navbar using navbar-text -->
+                <span class="navbar-text">Navbar Text</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navbar nav will be expanded for laptop screens but collapsed for mobile and tablet screens -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+                <img src="https://blog.logomaster.ai/hs-fs/hubfs/bmw-logo-1963.jpg?width=672&height=454&name=bmw-logo-1963.jpg" height="60" alt="brand">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="collapseNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Page 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Page 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">Navbar Text</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Can have form inside navbar
+         We can change the position of navbar using fixed-top, fixed-bottom or sticky-top
+    -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+                <img src="https://blog.logomaster.ai/hs-fs/hubfs/bmw-logo-1963.jpg?width=672&height=454&name=bmw-logo-1963.jpg" height="60" alt="">
+            </a>
+            <form class="d-flex">
+                <input type="text" name="search" id="search" placeholder="Search" class="form-control me-2">
+                <button type="button" class="btn btn-primary">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

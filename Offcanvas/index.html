@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offcanvas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Offcanvas is a sidebar component that can be toggled via JavaScript to appear from the left, right, or bottom edge of the viewport -->
+    <div class="container m-5">
+        <button type="button" class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvas">Toggle Offcanvas</button>
+    </div>
+    <p class="display-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum adipisci error consequuntur excepturi porro laboriosam quia sapiente vitae ea voluptatem eos enim, dolore, fugit distinctio soluta! Laudantium, sed molestias. Saepe corporis ab quas. Corporis, nostrum porro? Laudantium, similique saepe aut dicta deleniti ea, quam nobis quis molestiae temporibus atque pariatur. Rerum nulla eum sint animi odit sapiente quaerat debitis porro optio iusto, laborum at facere esse? Dicta nihil, possimus nobis velit beatae provident vel amet inventore assumenda modi voluptates, quis sint ducimus cum perferendis culpa atque qui aperiam architecto eaque asperiores! Eveniet, a excepturi ducimus odio, voluptates impedit in corrupti odit aliquam consectetur voluptate nemo? Voluptate dolorum ipsa aspernatur et dignissimos quod ab iure illum adipisci asperiores nisi suscipit reiciendis inventore animi atque, maxime cum vitae quae! Et expedita commodi aliquid amet ea laudantium maiores placeat nisi at qui suscipit in recusandae voluptatibus, accusantium nihil similique doloremque voluptatem quia fuga dignissimos tempore quo, necessitatibus quibusdam! Ducimus voluptatum, tenetur quidem ullam et nostrum magni harum tempore voluptates blanditiis quibusdam obcaecati doloribus, excepturi repellat, autem quis aspernatur tempora consequuntur sed dolor totam eum id porro voluptatem? Quidem asperiores sint consequatur perspiciatis? Consequatur cum laboriosam deserunt harum possimus magni, animi modi aliquam ipsum in repudiandae enim, hic quidem repellendus facere sit obcaecati cupiditate! Accusamus, architecto incidunt cupiditate quibusdam doloribus, ea quia nihil illo expedita nobis culpa temporibus nisi enim. Quod repellat laborum ratione? Laboriosam aut quidem exercitationem tempora, ipsam provident quasi, odio iure harum non, nemo reprehenderit doloribus molestiae cum id. Consequatur officiis unde nulla vitae eaque minima molestias reiciendis voluptas amet quidem beatae, vel facere cum deleniti quia. Nam obcaecati vitae dicta fuga nobis, doloribus sed dignissimos? Velit temporibus sunt veritatis deserunt labore tempora quaerat voluptatum at placeat nulla dolores illo accusantium quos expedita debitis minima, soluta iure repellat. Eum, tenetur aliquid!</p>
+
+    <!-- data-bs-backdrop sets the backdrop (everything except offcanvas is darkened) -->
+    <!-- data-bs-scroll sets if the body should be scrollable when offcanvas is displayed -->
+    <!-- The offcanvas can be positioned using offcanvas-start, offcanvas-end, offcanvas-top or offcanvas-bottom -->
+    <div class="offcanvas offcanvas-start" tab-index="-1" data-bs-backdrop="true" data-bs-scroll="false" id="offcanvas">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, delectus! Reiciendis nulla, velit illo id, esse cupiditate excepturi sit amet in, quas autem dolores? Ipsa nulla ipsum nostrum rem expedita.</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
