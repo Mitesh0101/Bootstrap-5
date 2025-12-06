@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Can use top, start, bottom and end too. They can take values 0, 50 and 100 -->
+    <!-- <div class="position-relative">
+        <div class="position-absolute start-50">Content</div>
+        <div class="position-fixed top-50">Content</div>
+        <div class="position-relative">Content</div>
+        <div class="position-sticky">Content</div>
+        <div class="position-static">Content</div>
+    </div> -->
+
+    <!-- Can use translate-middle-x or translate-middle-y to position them horizontally or vertically -->
+    <div class="container position-relative m-5 border border-dark mx-auto" style="height: 500px; width: 500px;">
+        <div style="height: 50px; width: 50px;" class="position-absolute bg-dark top-0 start-0"></div>
+        <div style="height: 50px; width: 50px;" class="position-absolute bg-dark top-0 start-50 translate-middle-x"></div>
+        <div style="height: 50px; width: 50px;" class="position-absolute bg-dark top-0 end-0"></div>
+        <div style="height: 50px; width: 50px;" class="position-absolute bg-dark top-50 start-0 translate-middle-y"></div>
+        <div style="height: 50px; width: 50px;" class="position-absolute bg-dark top-50 start-50 translate-middle"></div>
+        <div style="height: 50px; width: 50px;" class="position-absolute bg-dark top-50 end-0 translate-middle-y"></div>
+        <div style="height: 50px; width: 50px;" class="position-absolute bg-dark bottom-0 start-0"></div>
+        <div style="height: 50px; width: 50px;" class="position-absolute bg-dark bottom-0 start-50 translate-middle-x"></div>
+        <div style="height: 50px; width: 50px;" class="position-absolute bg-dark bottom-0 end-0"></div>
+    </div>
+
+    <!-- Can use translate-middle-x or translate-middle-y to position them horizontally or vertically -->
+    <div class="container position-relative m-5 border border-dark mx-auto" style="height: 500px; width: 500px;">
+        <div style="height: 50px; width: 50px;" class="position-absolute bg-dark top-0 start-0 translate-middle"></div>
+        <div style="height: 50px; width: 50px;" class="position-absolute bg-dark top-0 start-50 translate-middle"></div>
+        <div style="height: 50px; width: 50px;" class="position-absolute bg-dark top-0 start-100 translate-middle"></div>
+        <div style="height: 50px; width: 50px;" class="position-absolute bg-dark top-50 start-0 translate-middle"></div>
+        <div style="height: 50px; width: 50px;" class="position-absolute bg-dark top-50 start-50 translate-middle"></div>
+        <div style="height: 50px; width: 50px;" class="position-absolute bg-dark top-50 start-100 translate-middle"></div>
+        <div style="height: 50px; width: 50px;" class="position-absolute bg-dark top-100 start-0 translate-middle"></div>
+        <div style="height: 50px; width: 50px;" class="position-absolute bg-dark top-100 start-50 translate-middle"></div>
+        <div style="height: 50px; width: 50px;" class="position-absolute bg-dark top-100 start-100 translate-middle"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

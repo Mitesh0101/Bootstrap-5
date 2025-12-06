@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- All flex classes can be used responsively -->
+    <!-- Can also use responsive variants of these classes like: d-md-flex, d-lg-flex, d-md-inline-flex, d-lg-inline-flex etc -->
+    <div class="d-flex bg-dark text-white m-5 fs-5">This is some content</div>
+    <div class="d-inline-flex bg-dark text-white m-5 fs-5">This is some content</div>
+
+    <!-- can set flex direction using flex-column, flex-row, flex-row-reverse, flex-column-reverse -->
+    <!-- Can use gap to specify the gap between elements -->
+    <!-- justify-content and align-items can be used too such as : 
+         .justify-content-start
+         .justify-content-end
+         .justify-content-center
+         .justify-content-between
+         .justify-content-around
+         .justify-content-evenly
+         
+         .align-items-start
+         .align-items-end
+         .align-items-center
+         .align-items-baseline
+         .align-items-stretch
+    -->
+    <!-- Can use align-self on direct child as they are also flex or on the element itself -->
+    <div class="container d-flex flex-row fs-5 border mb-3 justify-content-center align-items-center gap-5">
+        <div>This is line 1 <br>Line 1.1 </div>
+        <div class="align-self-end">This is line 2</div>
+        <div>This is line 3</div>
+    </div>
+    
+    <div class="container d-flex flex-row-reverse fs-5 border mb-3 justify-content-center align-items-center gap-5">
+        <div>This is line 1 <br>Line 1.1</div>
+        <div>This is line 2</div>
+        <div>This is line 3</div>
+    </div>
+    
+    <div class="container d-flex flex-column fs-5 border mb-3 justify-content-center align-items-center">
+        <div>This is line 1</div>
+        <div>This is line 2</div>
+        <div>This is line 3</div>
+    </div>
+    
+    <div class="container d-flex flex-column-reverse fs-5 border mb-3 justify-content-center align-items-center">
+        <div>This is line 1</div>
+        <div>This is line 2</div>
+        <div>This is line 3</div>
+    </div>
+
+    <div class="container d-flex fs-5 border mb-3">
+        <div class="flex-fill bg-dark text-white">This is line 1 <br>Line 1.1 </div>
+        <div class="flex-fill bg-dark text-white align-self-end">This is line 2</div>
+        <div class="flex-fill bg-dark text-white">This is line 3</div>
+    </div>
+    
+    <!-- Can use flex-wrap classes too like : 
+    .flex-nowrap
+    .flex-wrap
+    .flex-wrap-reverse
+    -->
+    <div class="container d-flex fs-5 border mb-3 flex-wrap">
+        <div class="w-25 bg-dark text-white">Hello</div>
+        <div class="w-25 bg-dark text-white">Hello</div>
+        <div class="w-25 bg-dark text-white">Hello</div>
+        <div class="w-25 bg-dark text-white">Hello</div>
+        <div class="w-25 bg-dark text-white">Hello</div>
+    </div>
+    
+    <!-- Can use order class to rearrange elements inside flex container
+    .order-0
+    .order-1
+    .order-2
+    .order-3
+    .order-4
+    .order-5
+    .order-first
+    .order-last
+    -->
+    <div class="container d-flex fs-5 border mb-3">
+        <div class="flex-fill bg-dark text-white order-3">This is line 1 <br>Line 1.1 </div>
+        <div class="flex-fill bg-dark text-white order-2 align-self-end">This is line 2</div>
+        <div class="flex-fill bg-dark text-white order-1">This is line 3</div>
+    </div>
+    
+    <!-- Can use align-content to specify how multiple lines sit together
+         .align-content-start
+         .align-content-end
+         .align-content-center
+         .align-content-around
+         .align-content-stretch 
+    -->
+    <div class="container d-flex fs-5 border mb-3 flex-wrap align-content-center" style="height: 300px;">
+        <div class="w-25 bg-dark text-white">Hello</div>
+        <div class="w-25 bg-dark text-white">Hello</div>
+        <div class="w-25 bg-dark text-white">Hello</div>
+        <div class="w-25 bg-dark text-white">Hello</div>
+        <div class="w-25 bg-dark text-white">Hello</div>
+    </div>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
